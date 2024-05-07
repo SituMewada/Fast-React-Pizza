@@ -23,13 +23,13 @@ async function fetchAddress() {
 
 import { createSlice } from '@reduxjs/toolkit'
 
-const intitialState = {
+const initialState = {
     username: 'Sitaram',
 }
 
 const userSlice = createSlice({
     name: 'user',
-    intitialState,
+    initialState,
     reducers: {
         updateName(state, action) {
             state.username = action.payload
